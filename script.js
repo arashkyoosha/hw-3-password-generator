@@ -1,3 +1,6 @@
+const allChars =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+=-[]{}|/?><`~";
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -7,8 +10,11 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
+
+var passwordLength = prompt("How many characters? (Min:8 max:128)");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
